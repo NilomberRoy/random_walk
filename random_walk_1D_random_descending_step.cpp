@@ -12,7 +12,7 @@
 // central limit theorem.
 //
 // Output: "walk5.dat" containing (position, normalized_count).
-// ==========================================================
+
 
 #include <iostream>
 #include <fstream>
@@ -27,13 +27,12 @@ using namespace std;
 // Output file
 ofstream fout("walk5.dat");
 
-// ------------------ Simulation Parameters ------------------
 const int particle_num = 100000;   // number of particles to simulate
 const int step_num     = 100;      // number of steps per particle
 const int range        = 200;      // histogram bins for integer part
 // Each bin corresponds to one integer position. The histogram spans
 // positions from -range/2 to +range/2.
-// ------------------------------------------------------------
+
 
 int main() {
     // RNG: initialize random generator
@@ -88,3 +87,4 @@ int main() {
     fout.close();
     return 0;
 }
+
